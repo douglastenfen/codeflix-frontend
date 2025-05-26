@@ -38,12 +38,14 @@ export const AuthForm: React.FC<AuthFormProps> = ({ formType, onSubmit }) => {
       <div className='mt-8 flex flex-col space-y-4'>
         <InputField
           id='email'
+          name='email'
           label='Email'
           type='email'
           placeholder='Enter your email'
         />
         <InputField
           id='password'
+          name='password'
           label='Password'
           type='password'
           placeholder='Enter your password'
@@ -52,6 +54,7 @@ export const AuthForm: React.FC<AuthFormProps> = ({ formType, onSubmit }) => {
           <InputField
             id='confirm-password'
             label='Confirm Password'
+            name='confirm-password'
             type='password'
             placeholder='Confirm your password'
           />
