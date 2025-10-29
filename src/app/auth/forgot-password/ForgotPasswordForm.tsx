@@ -22,6 +22,7 @@ export function ForgotPasswordForm() {
 
       <InputField
         id='email'
+        name='email'
         type='email'
         label='Email'
         placeholder='Enter your email'
