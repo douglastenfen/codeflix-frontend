@@ -5,3 +5,8 @@ Content-Type: application/json
   "email": "testusermail.com",
   "password": "xx"
 }
+
+######
+
+###
+GET http://localhost:3333/movies?genres_like=Horror&page=1&_limit=10
