@@ -1,3 +1,5 @@
+import { Suspense } from 'react';
+
 import Header from './components/Header';
 
 import { Banner } from './components/Banner';
@@ -19,7 +21,9 @@ export default async function Home() {
 
   return (
     <div className='relative bg-gradient-to-b pb-8'>
-      <Header />
+      <Suspense fallback={null}>
+        <Header />
+      </Suspense>
       <main className='no-scrollbar relative overflow-y-scroll p-8 pb-20 lg:pl-16'>
         <Banner movie={movie} />
         {moviesByGenre.map((movie) => (
