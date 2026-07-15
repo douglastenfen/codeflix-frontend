@@ -11,7 +11,9 @@ export const getFeaturedMovies = async (): Promise<Movie[]> => {
 
 export const getMoviesByGenre = async (
   genre: string,
-  options?: RequestOptions
+  options: RequestOptions = {
+    _limit: 100,
+  }
 ): Promise<Movie[]> => {
   return apiRequest(
     `movies`,
