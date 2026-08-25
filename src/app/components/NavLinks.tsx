@@ -1,11 +1,15 @@
+'use client';
+
+import Link from 'next/link';
+
 export const NavLinks = () => {
   return (
     <nav>
       <ul className='hidden md:flex md:space-x-4'>
-        <li className='text-white'>Home</li>
-        <li className='text-white'>TV Shows</li>
-        <li className='text-white'>Movies</li>
-        <li className='text-white'>New & Popular</li>
+        <Link href='/search?genre=Comedy'>Comedy</Link>
+        <Link href='/search?genre=Action'>Action</Link>
+        <Link href='/search?genre=Adventure'>Adventure</Link>
+        <Link href='/search?genre=Animation'>Animation</Link>
       </ul>
     </nav>
   );
