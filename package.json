@@ -7,10 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "start:fake-api": "json-server --watch db.json --port 3333"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "@vidstack/react": "^1.15.6",
     "next": "15.3.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
